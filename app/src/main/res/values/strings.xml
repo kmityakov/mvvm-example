@@ -1,0 +1,7 @@
+<resources>
+    <string name="app_name">mvvm-example</string>
+    <string name="title">Song finder</string>
+    <string name="instagram_id">Enter song name</string>
+    <string name="search">Search</string>
+    <string name="error">Unable to find anything</string>
+</resources>
