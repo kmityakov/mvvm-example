@@ -23,25 +23,14 @@ class MainActivity : AppCompatActivity() {
     }
 
     fun observeViewModel() {
-        viewModel.songData.observe(this, Observer {
-            if (it != null) {
-                text_results.text = "${it.artistName}\n${it.trackName}"
-            } else {
-                text_results.text = getString(R.string.error)
-            }
+        viewModel.counter.observe(this, Observer {
+            text_counter.text = it.toString()
         })
     }
 
     fun initView() {
-        btn_search.setOnClickListener {
-            searchSong()
-        }
-    }
-
-    fun searchSong() {
-        val term = text_song_name.text.toString()
-        if (term.isNotEmpty()) {
-            viewModel.searchSong(term)
+        btn_increment.setOnClickListener {
+            viewModel.onIncrementClicked()
         }
     }
 }
