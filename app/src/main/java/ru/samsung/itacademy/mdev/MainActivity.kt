@@ -1,4 +1,4 @@
-package com.example.mvvm
+package ru.samsung.itacademy.mdev
 
 import android.os.Bundle
 import androidx.appcompat.app.AppCompatActivity

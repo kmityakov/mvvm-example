@@ -1,4 +1,4 @@
-package com.example.mvvm
+package ru.samsung.itacademy.mdev
 
 import androidx.lifecycle.MutableLiveData
 import androidx.lifecycle.ViewModel
